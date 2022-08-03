@@ -1,0 +1,45 @@
+#include <iostream>
+#include <sstream>
+#include <string>
+
+using namespace std;
+
+int main()
+{
+    string x[3];
+    cout << "Enter regular expressions" << endl;
+    for(int i=0;i<3;i++){
+        cin>> x[i];
+    }
+
+   string xx[3];
+    cout << "The expressions are: ";
+    for(int n=0; n<3; n++){
+    cout << x[n];
+    xx[3]= x[n];
+    }
+    char a = 'U';
+    if(xx[3].find(a)){
+        char aa = 'a';
+        char bb = 'b';
+        string y[3];
+        cout<< " Enter string :";
+        for(int i=0;i<3;i++){
+        cin>> y[i];
+        }
+        string yy[3];
+        cout << "String : ";
+        for(int n=0; n<3; n++){
+        cout << y[n] ;
+        yy[3]=y[n];
+        }
+        if(yy[3].find(aa)&& yy[3].find(bb)){
+            cout << " status = valid" << endl;
+        }else{
+        cout << " status = invalid" << endl;
+        }
+
+    }
+
+    return 0;
+}
